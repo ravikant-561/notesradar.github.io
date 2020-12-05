@@ -1,0 +1,366 @@
+ 
+    * {
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      list-style: none;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: montserrat;
+      background-image: url('back3.jpg');
+      background-repeat: no-repeat;
+      height: 100vh;
+      width: 100%;
+      
+      background-size : cover ;
+      background-position: center;
+      
+    }
+
+    nav {
+      background: #424242e0;
+      height: 80px;
+      width: 100%;
+    }
+
+    .logo {
+      color: white;
+      font-size: 30px;
+      line-height: 80px;
+      letter-spacing: -1px;
+      padding: 0 10px;
+      font-weight: 600;
+    }
+
+    .logo:hover {
+      background: none;
+    }
+
+    nav ul {
+      float: right;
+      margin-right: 20px;
+    }
+
+    nav ul li {
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 5px;
+    }
+
+    nav ul li a {
+      color: white;
+      font-size: 16px;
+      padding: 7px 13px;
+      border-radius: 3px;
+      text-transform: uppercase;
+
+    }
+
+    .active.active,
+    .item-list a:hover {
+      background: #fafafa33;
+      transition: .5s;
+      color: white;
+    }
+
+    .checkbtn {
+      font-size: 30px;
+      color: white;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+    }
+
+    #check {
+      display: none;
+    }
+
+    
+    .inputbox {
+      border: none;
+      outline: none;
+    
+      float: left;
+      padding: 0;
+      color: white;
+      font-size: 16px;
+      transition: 0.4s all;
+      line-height: 2px;
+      width: 0px;
+      background: #740c0ce0;
+      border-radius: 7px;
+    }
+
+    .btn {
+      color: #424242;
+      float: right;
+      text-decoration: none;
+      width: 26px;
+      height: 23px;
+      line-height: 25px;
+      text-align: center;
+      justify-content: center;
+      border-radius: 50%;
+
+
+    }
+
+    .searchbox {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+
+
+      height: auto;
+      border-radius: 1px;
+
+    }
+    ::placeholder{
+      color: white;
+    }
+
+    .searchbox:hover .inputbox {
+      width: 240px;
+      padding: 0px 6px;
+    }
+
+    .inputbox {
+      color: white;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background: #757575;
+    }
+
+    .btn {
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+    }
+
+    @media (max-width: 952px) {
+      .logo {
+        font-size: 25px;
+        padding-left: 50px;
+      }
+
+      nav ul li a {
+        font-size: 16px;
+
+      }
+
+      .inputbox {
+        transition: 0.4s all;
+      }
+    }
+
+    @media (max-width: 430px) {
+      .inputbox {
+        width: 0px;
+        transition: 0.4s all;
+      }
+
+      .checkbtn {
+        color: white;
+      }
+    }
+
+    @media (max-width: 858px) {
+      .checkbtn {
+        display: block;
+      }
+
+      ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #757575c7;
+
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+      }
+
+      nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+
+      nav ul li a {
+        font-size: 20px;
+      }
+
+      #check:checked~ul {
+        left: 0;
+      }
+    }
+    @media (max-width: 340px) {
+      
+      .inputbox{
+        width: 100px;
+      }
+    }
+
+    @media(max-width: 333px) {
+      .logo {
+        font-size: 20px;
+        padding-left: 20px;
+      }
+    }
+
+    section {
+      background: url('back3.jpg') no-repeat;
+      background-size: cover;
+      height: calc(100vh - 80px);
+    }
+
+    footer {
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      background: black;
+      color: white;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+
+    }
+
+    .list-footer {
+      display: flex;
+      margin-top: -115px;
+      list-style-type: none;
+
+
+    }
+
+    .list-footer li a {
+      text-decoration: none;
+      color: black;
+      font-size: 17px;
+      font-weight: bold;
+      padding: 5px;
+      margin: 30px;
+
+    }
+
+    .list-footer li a:hover {
+      box-shadow: black;
+      box-shadow: 5px 2px 3px 0.7px black;
+      border-radius: 4px;
+      transition: 0.7s;
+
+    }
+
+    .social-media {
+      margin: 20px auto;
+    }
+
+    .social-media i {
+      padding: 20px;
+      font-size: 25px;
+      color: black;
+    }
+
+    .facebook i:hover {
+      color: blue;
+
+    }
+
+    .youtube i:hover {
+      color: red;
+
+    }
+
+    .insta i:hover {
+      color: rgba(223, 13, 13, 0.74);
+
+    }
+
+    .twitter i:hover {
+      color: skyblue;
+
+    }
+
+    @media(max-width:858px) {
+      .social-media i {
+        color: white;
+      }
+    }
+
+    @media(max-width:810px) {
+      footer input[type='submit'] {
+        font-size: 20px;
+      }
+
+      .list-footer li a {
+        padding: 15px;
+        font-size: 15px;
+        margin: 30px;
+      }
+
+      .social-media i {
+        padding: 10px;
+        color: white;
+      }
+
+    }
+
+    @media(max-width:610px) {
+      footer input[type='submit'] {
+        font-size: 14px;
+      }
+
+      .list-footer li a {
+        padding: 10px;
+        font-size: 10px;
+      }
+
+      .social-media i {
+        font-size: 15px;
+        color: white;
+      }
+    }
+
+    @media(max-width:470px) {
+      .list-footer li a {
+        padding: 5px;
+      }
+      .mid h2{
+        font-size: 20px;
+      }
+      .social-media i {
+        color: white;
+      }
+    }
+
+     .mid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        width: 100%; 
+       height: 62vh;  
+        flex-direction: column; 
+        margin: 15px 0 15px 0;  
+    }
+     
+
+    .logo-2{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    } 
+    .mid h2{
+    font-family:monospace;
+    font-size: 17px;
+    padding: 3px;
+    }
+  
